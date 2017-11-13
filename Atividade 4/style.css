@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header .logo h1{
+    color: #128B12;
+    float: left;
+    padding: 10px;
+}
+
+header .descricao{
+    float: right;
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+
+
+.nav_superior{
+    background-color: #128B12;
+    width: 100%;
+    overflow: auto;
+    font-size: 20px;
+}
+
+.nav_superior ul li{
+    list-style: none;
+}
+.nav_superior > ul > li > a, .dropdown .dropdown-button{
+    display: block;
+    text-decoration: none;
+    float:left;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+.dropdown{
+    float: left;
+}
+
+.dropdown-content{
+    position: absolute;
+    background-color: #63b37b;
+    width: 150px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown .dropdown-button{
+    float:none;
+}
+
+.nav_superior > ul > li > a:hover, .dropdown .dropdown-button:hover{
+    background-color: #FFFFFF;
+}
+
+.dropdown-content > ul{
+    list-style: none;
+}
+
+.dropdown-content > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content > ul > li > a:hover{
+    background-color: #FFFFFF;
+
+}
+
+.nav-lateral{
+    background-color: #ddd;
+    width:20%;
+    height: 1000px;
+    float: left;
+}
+
+.nav-lateral ul{
+    list-style: none;
+}
+
+.nav-lateral ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-lateral ul li a:hover{
+    background-color: #ccc;
+}
+
+.container{
+    margin-left: 20%;
+    padding: 10px;
+}
