@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 10px;
+}
+.accordeon{
+    margin: 5px;
+}
+.accordeon .item-accordeon {
+    background-color: #7b76a0;
+    overflow: hidden;
+}
+
+.accordeon .item-accordeon .corpo-accordeon {
+    max-height: 0px;
+    transition: max-height 600ms;
+}
+.accordeon .item-accordeon .corpo-accordeon span{
+    padding: 0.2%;
+    display: block;
+    
+}
+
+
+.accordeon .item-accordeon .titulo-accordeon {
+    padding: 20px;
+    background-color: #c8d1d1;
+    cursor: pointer;
+}
