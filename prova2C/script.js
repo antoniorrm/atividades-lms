@@ -75,6 +75,7 @@ function atualizarSlide() {
                 adicionarItem(e.title, e.descricao, e.bairro);
             });
             let item = document.querySelectorAll(".slider .item");
+            item[0].classList.add("active");
             let botaoLeft = document.querySelector(".arrow.left");
             let botaoRight = document.querySelector(".arrow.right");
             let current = 0;

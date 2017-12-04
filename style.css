@@ -1,0 +1,17 @@
+.item > li{
+    list-style: none;
+}
+.item > li > a{
+    display: block;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+.itemIniciado{
+    background: rgb(235, 255, 56);
+}
+.itemConcluido{
+    background: rgb(79, 255, 56);
+}
+.itemNaoIniciado{
+    background: rgb(255, 56, 56);
+}
