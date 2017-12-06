@@ -1,7 +1,12 @@
+.item{
+    cursor: pointer;
+}
 .item > li{
     list-style: none;
 }
+
 .item > li > a{
+    
     border: none;
     outline: none;
     transition: all 300ms;
@@ -12,12 +17,7 @@
 .item:active{
     box-shadow: 4px 4px 3px rgba(122, 121, 121, 0.8);
     transform: translate(4px, 4px);
-}
-.button{
-    
-}
-
-    
+}    
 .itemIniciado{
     background: rgb(235, 255, 56);
 }
