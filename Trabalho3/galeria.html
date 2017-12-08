@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container   ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">DJ Store</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <button id="sair" type="submit" class="btn btn-default">Sair</button>
+                </ul>
+                <ul id="cesta" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cesta
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <form class="navbar-form navbar-left">
+                                <div id="cestaItem" class="form-group">
+                                   
+                                </div>
+                                <button id="fim" type="submit" class="btn btn-default">Finalizar</button>
+                            </form>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="entrar" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entrar
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <label for="">Usuario:</label>
+                                    <input id="usuarioE" type="text" class="form-control" placeholder="Usuario">
+                                    <label for="">Senha:</label>
+                                    <input id="senhaE" type="password" class="form-control" placeholder="Senha">
+                                </div>
+                                <button type="submit" class="btn btn-default" id="entrarSubmit">Entrar</button>
+                                <div class="alert alert-danger erro" role="alert"></div>
+                            </form>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="cadastrar" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastrar
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <label for="">Usuario:</label>
+                                    <input id="usuarioC" type="text" class="form-control" placeholder="Usuario">
+                                    <label for="">Senha:</label>
+                                    <input id="senhaC" type="password" class="form-control" placeholder="Senha">
+                                </div>
+                                <button type="submit" class="btn btn-default" id="cadastrarSubmit">cadastrar</button>
+                                <div class="alert alert-success sucesso" role="alert"></div>
+                            </form>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="https://www.shopmyexchange.com/products/images/xlarge/7238989_1007.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Fone JBL</h3>
+                        <p>...</p>
+                        <p>
+                            <a id="preco1" class="btn btn-primary" role="button">R$ 800,00</a>
+                            <div class="add">
+                                <hr>
+                                <label for="">Quantidade</label>
+                                
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="qtd1" placeholder="Quantidade">
+                                </div>
+                                
+                                <br>
+                                <a id="add1" class="btn btn-success" role="button">Adicionar</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://e-djs.com.br/wp-content/uploads/controladora-DDJ-RZX-pioneer-foto-destaque-fonte-mixmag.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p>
+                            <a id="preco2" class="btn btn-primary" role="button">R$ 4.500,00</a>
+                            <div class="add">
+                                <hr>
+                                <label for="">Quantidade</label>
+                                
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="qtd2" placeholder="Quantidade">
+                                </div>
+                                
+                                <br>
+                                <a id="add2" class="btn btn-success" role="button">Adicionar</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="https://http2.mlstatic.com/controladora-pioneer-xdj-rx-lancamento-xdjrx-produto-novo-D_NQ_NP_461405-MLB20870327658_092016-F.jpg"
+                        alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p>
+
+                            <a id="preco3" class="btn btn-primary" role="button">R$ 3.400,00</a>
+                            <div class="add">
+                                <hr>
+                                <label for="">Quantidade</label>
+                                
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="qtd3" placeholder="Quantidade">
+                                </div>
+                                
+                                <br>
+                                <a id="add3" class="btn btn-success" role="button">Adicionar</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+$(".sucesso").hide(100);
+$(".erro").hide(100);
+        if (localStorage.getItem("usuario") === null) {
+            $("#entrar").show();
+            $("#cadastrar").show();
+            $("#sair").hide();
+            $("#cesta").hide();
+            $(".add").hide();
+            $("#entrarSubmit").click(function () {
+                event.preventDefault();
+                $.ajax({
+                    type: "GET",
+                    url: "http://rest.learncode.academy/api/antoniorrm/usuarios",
+                    success: function (data) {
+                        let usuario = $("#usuarioE").val();
+                        let senha = $("#senhaE").val();
+                        for (let i = 0; i < data.length; i++) {
+                            if ((usuario == data[i].usuario) && (senha == data[i].senha)) {
+                                $(".erro").empty();
+                                if (typeof (Storage) !== "undefined") {
+                                    localStorage.setItem("usuario", usuario);
+                                    history.go(0);
+                                    break;
+                                } else {
+                                    document.getElementById("spanUser").innerHTML = "Sorry, your browser does not support Web Storage...";
+                                }
+                            } else {
+                                $(".erro").show().delay(5000).hide(100);
+                                $(".erro").text("Usuário ou senha inválidos !!");
+                                
+                            }
+                        }
+                    }
+                })
+            });
+        } else {
+            $("#entrar").hide(100);
+            $("#cadastrar").hide(100);
+            $("#sair").show();
+            $("#cesta").show();
+            $(".add").show();
+            $("#sair").click(function () {
+                localStorage.removeItem("usuario");
+                $("#sair").hide(100);
+                $("#entrar").show();
+                $("#cadastrar").show();
+                $(".add").hide(100);
+                $("#cesta").hide(100);
+                history.go(0);
+            });
+        }
+
+        $("#cadastrarSubmit").click(function (e) {
+            e.preventDefault();
+            let body = {
+                usuario: $("#usuarioC").val(), senha: $("#senhaC").val()
+            };
+            $.ajax({
+                type: "POST",
+                url: "http://rest.learncode.academy/api/antoniorrm/usuarios",
+                data: body,
+                success: function () {
+                    $("#usuarioC").val("");
+                    $("#senhaC").val("");
+                    $(".sucesso").show().delay(5000).hide(100);
+                    $(".sucesso").text("Usuário cadastrado com sucesso !!");
+                }
+            })
+        });
+
+        function updateList() {
+            $.ajax({
+                type: "GET",
+                url: "http://rest.learncode.academy/api/antoniorrm/produtos",
+                success: function (data) {
+                    $("#cestaItem").empty();
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].usuario == localStorage.getItem("usuario")) {
+                            insertItem(data[i].valor, data[i].qtd);
+                        }
+                    }
+                }
+            })
+        }
+
+        function insertItem(valor, qtd) {
+            let lv = $("<label></label>").text("Valor: ");
+            let v = $("<span></span>").text(valor);
+            let lqtd = $("<label></label>").text("Quantidade: ");
+            let qtde = $("<span></span>").text(qtd);
+            let hr = $("<hr>");
+            $("#cestaItem").append(lv);
+            $("#cestaItem").append(v);
+            $("#cestaItem").append(lqtd);
+            $("#cestaItem").append(qtde);
+            $("#cestaItem").append(hr);
+        }
+        updateList();
+
+        $("#add1").click(function () {
+            let body = {
+                usuario: localStorage.getItem("usuario"), valor: $("#preco1").text(), qtd: $("#qtd1").val()
+            };
+            $.ajax({
+                type: "POST",
+                url: "http://rest.learncode.academy/api/antoniorrm/produtos",
+                data: body,
+                success: function () {
+                    $("#qtd1").val("");
+                    updateList();
+                }
+            })
+        });
+
+        $("#add2").click(function () {
+            let body = {
+                usuario: localStorage.getItem("usuario"), valor: $("#preco2").text(), qtd: $("#qtd2").val()
+            };
+            $.ajax({
+                type: "POST",
+                url: "http://rest.learncode.academy/api/antoniorrm/produtos",
+                data: body,
+                success: function () {
+                    $("#qtd2").val("");
+                    updateList();
+                }
+            })
+        });
+
+        $("#add3").click(function () {
+            let body = {
+                usuario: localStorage.getItem("usuario"), valor: $("#preco3").text(), qtd: $("#qtd3").val()
+            };
+            $.ajax({
+                type: "POST",
+                url: "http://rest.learncode.academy/api/antoniorrm/produtos",
+                data: body,
+                success: function () {
+                    $("#qtd3").val("");
+                    updateList();
+                }
+            })
+        });
+        console.log($("#cestaItem").empty());
+        $("#fim").click(function () {
+            event.preventDefault();
+            if ($("#cestaItem").empty()) {
+                window.location.href = "minhascompras.html";
+            }
+        });
+    </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+</html>
